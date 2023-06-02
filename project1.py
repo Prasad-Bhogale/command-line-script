@@ -3,7 +3,7 @@ import requests
 
 @click.command()
 @click.argument('query')
-def search_books(query):
+def searchdatabooks(query):
   
     url = 'https://openlibrary.org/search.json'
     params = {'q': query}
@@ -21,5 +21,5 @@ def search_books(query):
         print("---")
 
 if __name__ == '__main__':
-    search_books()
+    searchdatabooks()
 
